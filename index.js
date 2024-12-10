@@ -74,6 +74,7 @@ function calculateWorkingCapitalRatio(data) {
 
 // Read JSON data from file
 fs.readFile('data.json', 'utf8', (err, data) => {
+    //handle error while reading json data
     if (err) {
         console.error('Error reading file:', err);
         return;
@@ -96,3 +97,13 @@ fs.readFile('data.json', 'utf8', (err, data) => {
     console.log("Net Profit Margin:", netProfitMargin + "%");
     console.log("Working Capital Ratio:", workingCapitalRatio);
 });
+
+// Export functions 
+module.exports = {
+    formatCurrency,
+    calculateRevenue,
+    calculateExpenses,
+    calculateGrossProfitMargin,
+    calculateNetProfitMargin,
+    calculateWorkingCapitalRatio
+  };

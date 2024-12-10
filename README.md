@@ -92,4 +92,13 @@ Working Capital Ratio: 95%
 
 If your program requires a special way to compile or a specific version of a toolset, please be sure to include that in your running instructions.
 
+# Instructions
+
+To Run code
+node index
+
+To test
+npm test
+
+
 __Thank you and good luck!__
